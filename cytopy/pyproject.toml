@@ -1,7 +1,17 @@
 [project]
 name = "cytopy"
 version = "0.1.0"
-description = "Add your description here"
+description = "Aprendizado da biblioteca py4cytoscape em integração com meu projeto de tcc"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "py4cytoscape>=1.13.0",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "uv"
+update_changelog_on_bump = true
+major_version_zero = true
